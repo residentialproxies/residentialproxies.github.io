@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://shluqu.github.io/rss.xml
+Disallow: /

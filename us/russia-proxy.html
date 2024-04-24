@@ -174,11 +174,19 @@
                         </table>
 
 <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
   .centered-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* 使用视口高度来垂直居中 */
+    height: 100vh; /* 垂直居中 */
+    max-width: 300px; /* 设置最大宽度 */
+    margin: auto; /* 水平居中 */
+    padding: 20px; /* 为容器添加一些内边距 */
+    box-sizing: border-box; /* 确保内边距和边框包含在宽度内 */
   }
   .centered-button {
     padding: 10px 20px;
@@ -196,6 +204,10 @@
 </style>
 </head>
 <body>
+
+<div class="centered-button-container">
+  <button class="centered-button">Click Me</button>
+</div>
 
 <div class="centered-button-container">
   <button class="centered-button">Click 22</button>

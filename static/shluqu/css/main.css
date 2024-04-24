@@ -396,21 +396,7 @@ h1 {
     margin: 0.67em 0;
 }
 
-/* line 256, src/assets/scss/custom/_style.scss */
 
-.outline-btn,
-.secondary-solid-btn,
-.primary-solid-btn,
-.solid-white-btn,
-.outline-white-btn,
-.secondary-outline-btn {
-    padding: 12px 28px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
 /* Grouping content
    ========================================================================== */
 

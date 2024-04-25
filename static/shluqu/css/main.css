@@ -185,7 +185,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* 确保有足够的高度来垂直居中按钮 */
 }
 
 .blue-button {

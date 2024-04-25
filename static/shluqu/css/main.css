@@ -180,39 +180,41 @@ textarea {
  */
 
  <style>
- .button-container {
-   width: 100%;
-   display: flex; /* 使用Flexbox布局 */
-   justify-content: center; /* 水平居中 */
-   align-items: center; /* 垂直居中 */
- }
- 
- .blue-button {
-   width: 33.333%; /* 宽度为父容器的三分之一 */
-   max-width: 300px; /* 最大宽度限制 */
-   padding: 10px 20px;
-   background-color: #007bff;
-   border: none;
-   border-radius: 5px;
-   color: #fff;
-   font-size: 16px;
-   text-align: center;
-   text-decoration: none;
-   transition: background-color 0.3s ease;
- }
- 
- .blue-button:hover,
- .blue-button:focus {
-   background-color: #0056b3;
- }
- 
- .blue-button a {
-   color: inherit;
-   text-decoration: none;
-   display: block;
-   width: 100%; /* 确保链接宽度与按钮一致 */
-   height: 100%; /* 确保链接高度与按钮一致 */
- }
+.button-container {
+  width: 100%;
+  display: flex; /* 使用Flexbox布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  min-height: 100vh; /* 确保父容器至少有视口的高度，以便垂直居中 */
+}
+
+.blue-button {
+  flex: 1; /* 让按钮占据可用空间 */
+  max-width: 300px; /* 最大宽度限制 */
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  /* 移除宽度设置，让flex属性控制宽度 */
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #0056b3;
+}
+
+.blue-button a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 100%; /* 确保链接宽度与按钮一致 */
+  height: 100%; /* 确保链接高度与按钮一致 */
+}
  </style>
 
 /*

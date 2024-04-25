@@ -179,13 +179,12 @@ textarea {
  * add purchase button
  */
 
- <style>
+<style>
 .button-container {
   width: 100%;
   display: flex; /* 使用Flexbox布局 */
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
-  min-height: 100vh; /* 确保父容器至少有视口的高度，以便垂直居中 */
 }
 
 .blue-button {
@@ -196,7 +195,7 @@ textarea {
   border: none;
   border-radius: 5px;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -215,7 +214,7 @@ textarea {
   width: 100%; /* 确保链接宽度与按钮一致 */
   height: 100%; /* 确保链接高度与按钮一致 */
 }
- </style>
+</style>
 
 /*
  * Hide visually and from screen readers

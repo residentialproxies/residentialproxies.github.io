@@ -180,35 +180,40 @@ textarea {
  */
 
  <style>
- html, body {
-   height: 5%;
-   margin: 0;
+ .button-container {
+   width: 100%;
+   display: flex; /* 使用Flexbox布局 */
+   justify-content: center; /* 水平居中 */
+   align-items: center; /* 垂直居中 */
  }
- .centered-button-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 15vh; /* 垂直居中 */
-   max-width: 33.33vm; /* 设置最大宽度 */
-   margin: auto; /* 水平居中 */
-   padding: 50px; /* 为容器添加一些内边距 */
-   box-sizing: border-box; /* 确保内边距和边框包含在宽度内 */
+ 
+ .blue-button {
+   width: 33.333%; /* 宽度为父容器的三分之一 */
+   max-width: 300px; /* 最大宽度限制 */
+   padding: 10px 20px;
+   background-color: #007bff;
+   border: none;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 16px;
+   text-align: center;
+   text-decoration: none;
+   transition: background-color 0.3s ease;
  }
-.centered-button {
- padding: 10px 20px;
- font-size: 16px;
- color: #fff;
- background-color: #007bff;
- border: none;
- border-radius: 5px;
- cursor: pointer;
- transition: background-color 0.3s ease;
- white-space: nowrap; /* 阻止文本换行 */
-}
- .centered-button:hover {
+ 
+ .blue-button:hover,
+ .blue-button:focus {
    background-color: #0056b3;
  }
-</style>
+ 
+ .blue-button a {
+   color: inherit;
+   text-decoration: none;
+   display: block;
+   width: 100%; /* 确保链接宽度与按钮一致 */
+   height: 100%; /* 确保链接高度与按钮一致 */
+ }
+ </style>
 
 /*
  * Hide visually and from screen readers

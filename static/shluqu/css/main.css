@@ -180,41 +180,24 @@ textarea {
  */
 
 <style>
-.button-container {
-  width: 100%;
+.button {
+  display: inline-block;
+  padding: 10px 20px; /* 按钮内边距 */
+  background-color: #007bff; /* 蓝色背景 */
+  color: #ffffff; /* 白色字体 */
+  text-decoration: none; /* 移除超链接下划线 */
+  border-radius: 5px; /* 圆角边框 */
+  cursor: pointer; /* 鼠标指针样式 */
+  transition: background-color 0.3s ease; /* 渐变过渡效果 */
+
+  /* 如果按钮里面有其他元素，让它们垂直水平居中 */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.blue-button {
-  flex: 0 1 33.333%; /* 不要让按钮长大，允许缩小，基础宽度为父容器的三分之一 */
-  max-width: 300px; /* 最大宽度限制 */
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.blue-button:hover,
-.blue-button:focus {
-  background-color: #0056b3;
-}
-
-.blue-button a {
-  color: inherit;
-  text-decoration: none;
-  display: flex; /* 使链接也使用Flexbox布局 */
-  align-items: center; /* 垂直居中文本 */
-  justify-content: center; /* 水平居中文本 */
-  height: 100%; /* 确保链接高度与按钮一致 */
-  width: 100%; /* 确保链接宽度与按钮一致 */
-  text-align: center; /* 确保文本在链接内居中 */
+.button:hover {
+  background-color: #0056b3; /* 按钮悬停时的背景色 */
 }
 </style>
 

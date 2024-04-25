@@ -180,24 +180,38 @@ textarea {
  */
 
 <style>
-.button {
-  display: inline-block;
-  padding: 10px 20px; /* 按钮内边距 */
-  background-color: #007bff; /* 蓝色背景 */
-  color: #ffffff; /* 白色字体 */
-  text-decoration: none; /* 移除超链接下划线 */
-  border-radius: 5px; /* 圆角边框 */
-  cursor: pointer; /* 鼠标指针样式 */
-  transition: background-color 0.3s ease; /* 渐变过渡效果 */
-
-  /* 如果按钮里面有其他元素，让它们垂直水平居中 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button-container {
+  text-align: center; /* 确保按钮在容器内水平居中 */
+  margin: auto; /* 水平自动边距，如果需要垂直居中，可配合其他样式 */
 }
 
-.button:hover {
-  background-color: #0056b3; /* 按钮悬停时的背景色 */
+.blue-button {
+  display: inline-block; /* 使按钮能够设置宽度和高度 */
+  padding: 10px 20px; /* 根据需要设置按钮的内边距 */
+  background-color: #007bff; /* 蓝色背景 */
+  color: #fff; /* 白色文字 */
+  border: none; /* 移除边框 */
+  border-radius: 5px; /* 圆角边框 */
+  font-size: 16px; /* 字体大小 */
+  cursor: pointer; /* 鼠标悬停时显示手形指针 */
+  text-decoration: none; /* 移除文本下划线 */
+  transition: background-color 0.3s ease; /* 背景色渐变效果 */
+  max-width: 300px; /* 最大宽度限制 */
+  min-width: 100px; /* 最小宽度限制，根据需要调整 */
+  box-sizing: border-box; /* 确保内边距和边框不超出按钮宽度 */
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #0056b3; /* 鼠标悬停或聚焦时的背景色 */
+}
+
+.blue-button a {
+  color: inherit; /* 继承父元素的文本颜色 */
+  text-decoration: none; /* 移除链接下划线 */
+  display: block; /* 使链接占据整个按钮区域 */
+  width: 100%; /* 链接宽度与按钮宽度一致 */
+  height: 100%; /* 链接高度与按钮高度一致 */
 }
 </style>
 

@@ -259,7 +259,7 @@ textarea {
 /* line 2287, src/assets/scss/custom/_style.scss */
 
 .accordion-faq .card-header.collapsed:after {
-    content: "\f067";
+    content: "+";
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -269,7 +269,7 @@ textarea {
 
 .accordion-faq .card-header:after {
     font-family: 'Font Awesome 6 Pro';
-    content: "\f068";
+    content: "-";
     float: right;
     -webkit-transition: 0.5s;
     transition: 0.5s;

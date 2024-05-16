@@ -215,49 +215,64 @@ textarea {
 }
 </style>
 
+/*==============================
+  10. FAQ CSS
+===============================*/
 
-/*
- * add FAQs
- */
 
- body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
+/* line 2262, src/assets/scss/custom/_style.scss */
+
+.accordion-faq .card {
+    border-radius: 0;
+    border: 0;
 }
 
-.faq-container {
-  width: 60%;
-  margin: 20px auto;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+
+/* line 2267, src/assets/scss/custom/_style.scss */
+
+.accordion-faq .card-header {
+    padding: 20px 0;
+    background: transparent;
+    border-bottom: 1px solid #ebebeb;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+    color: inherit;
 }
 
-.faq-item {
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+
+/* line 2277, src/assets/scss/custom/_style.scss */
+
+.accordion-faq .card-header h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
-.faq-question {
-  cursor: pointer;
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
+
+/* line 2282, src/assets/scss/custom/_style.scss */
+
+.accordion-faq .card-body {
+    padding: 25px 0;
+    background: transparent;
 }
 
-.faq-answer {
-  display: none;
-  margin-top: 10px;
-  font-size: 18px;
-  color: #555;
+
+/* line 2287, src/assets/scss/custom/_style.scss */
+
+.accordion-faq .card-header.collapsed:after {
+    content: "\f067";
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* line 2292, src/assets/scss/custom/_style.scss */
+
+.accordion-faq .card-header:after {
+    font-family: 'Font Awesome 6 Pro';
+    content: "\f068";
+    float: right;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 /*

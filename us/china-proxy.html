@@ -653,18 +653,67 @@
     </script>
     <!--============= menu skip end=============-->
     
-    <!--============= FAQ =============-->
-    document.addEventListener('DOMContentLoaded', function () {
-      var faqs = document.querySelectorAll('.faq-title');
-    
-      faqs.forEach(function (faq) {
-        faq.addEventListener('click', function () {
-          var faqSection = faq.parentNode;
-          faqSection.classList.toggle('active');
-        });
-      });
-    });
-<!--============= FAQ end=============-->
+        <!--faq section start-->
+        <div id="faq" class="ptb-100 ">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-lg-12">
+                      <div id="accordion-one" class="accordion accordion-faq">
+                          <div class="card mb-0">
+                              <a class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                  <h6 class="mb-0 d-inline-block">什么是静态住宅代理IP?
+                                  </h6>
+                              </a>
+                              <div id="collapseOne" class="collapse" data-parent="#accordion-one">
+                                  <div class="card-body">
+                                      <p>静态住宅IP英文名static residential proxy或ISP proxy，是一个由互联网服务提供商（ISP）分配的真实IP地址，结合了住宅和机房IP的优秀功能，可以在任何地区伪装自己的真实IP访问对应网络。ISP代理确保你的工作过程中具有高度的匿名性和稳定的速度。
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card mb-0">
+                              <a class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">
+                                  <h6 class="mb-0 d-inline-block">静态住宅代理IP的使用场景有哪些？</h6>
+                              </a>
+                              <div id="collapseTwo" class="collapse" data-parent="#accordion-one">
+                                  <div class="card-body">
+                                      <p>所以，静态住宅代理的使用场景与作用如下：<br> 1、提供高匿名性，提升网络使用的安全性；
+                                          <br>2、独享的静态住宅代理可避免与其余IP地址冲突，可用于注册等； <br>3、相比于动态住宅代理，静态住宅代理有着更为精确的地理位置信息；<br> 4、通常来说，速度会比动态住宅代理更快； <br>5、使用的是固定的IP地址，不容易因为IP地址跳来跳去而被限制；
+                                          <br>6、绕开一些站点的限制，正常访问网络。
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card mb-0">
+                              <a class="card-header collapsed" data-toggle="collapse" href="#collapseThree">
+                                  <h6 class="mb-0 d-inline-block">动态住宅IP和静态住宅IP有什么区别？
+                                  </h6>
+                              </a>
+                              <div id="collapseThree" class="collapse" data-parent="#accordion-one">
+                                  <div class="card-body">
+                                      <p>无论动态住宅IP还是静态住宅IP都来自真实的住宅IP地址，都可以提供匿名性，最大的不同是一个随机轮换，一个可以长时间保留。
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card mb-0">
+                              <a class="card-header collapsed" data-toggle="collapse" href="#collapseFour">
+                                  <h6 class="mb-0 d-inline-block">什么是动态住宅IP？
+                                  </h6>
+                              </a>
+                              <div id="collapseFour" class="collapse" data-parent="#accordion-one">
+                                  <div class="card-body">
+                                      <p>动态住宅IP或动态代理，也叫轮换代理，与分配一个粘性 IP 的静态代理不同，动态代理可让您访问整个 IP 池。 动态代理随机间隔交换。 例如，IP 地址可能会随着你发出的每个请求或每隔几分钟而更改。
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--faq section end-->
 
     <div class="dianshi-global" id="" name="">
         <div class="tpm1-anchor-widget--simple is-fixed is-def-hidden is-center" style="top: 0px;">

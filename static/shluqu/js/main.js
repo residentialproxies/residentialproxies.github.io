@@ -46,6 +46,21 @@
         element.siblings('.faq--item').find('.faq-content').slideUp(300, "swing");
       }
     });
+
+    //Faq2 model
+    document.addEventListener("DOMContentLoaded", function() {
+      var faqQuestions = document.querySelectorAll(".faq-question");
+      faqQuestions.forEach(function(question) {
+          question.addEventListener("click", function() {
+              var answer = this.nextElementSibling;
+              if (answer.style.display === "none" || answer.style.display === "") {
+                  answer.style.display = "block";
+              } else {
+                  answer.style.display = "none";
+              }
+          });
+      });
+  });
     //Menu Dropdown Icon Adding
     $("ul>li>.submenu").parent("li").addClass("menu-item-has-children");
     // drop down menu width overflow problem fix

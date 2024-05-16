@@ -564,18 +564,26 @@
                     <p>Ideally, a China proxy can help you achieve more than you can imagine. Therefore, the next time you feel stranded while trying to access some data use a proxy. Your security and anonymity matter when accessing any data.</p>
                 </div>
 
-<!--============= FAQs =============-->
+<!-- FAQ Container -->
 <div class="faq-container">
-  <div class="faq-item">
-      <div class="faq-question">How can you utilize a proxy for brand protection?</div>
-      <div class="faq-answer">A proxy can be crucial to detecting any faulty ads, unauthorized property use, or negative brand mentions. You can also track online brand misuse easily. It can also be crucial for cybersecurity by enhancing your privacy.</div>
+  <div class="faq" id="faq1">
+    <div class="faq-title">How can I track my order?</div>
+    <div class="faq-content">
+      <p>You can track your order by logging into your account on our website and viewing your order history.</p>
+    </div>
   </div>
-  <div class="faq-item">
-    <div class="faq-question">qqqqqqqqqqqqqqqqq</div>
-    <div class="faq-answer">wwwwwwwwwwww</div>
+  <div class="faq" id="faq2">
+    <div class="faq-title">What payment methods do you accept?</div>
+    <div class="faq-content">
+      <p>We accept various payment methods including credit cards, PayPal, and others as specified during checkout.</p>
+    </div>
+  </div>
+  <!-- Add more FAQ sections as needed -->
 </div>
-  <!-- Add more FAQ items here -->
-</div>
+
+
+
+
 <script src="scripts.js"></script>
                 <p data-pid="EMbilfs8" style="margin-top: 1.4em; margin-bottom: 1.4em;"><span style="font-synthesis: style; font-size: 20px;"><b>Is it illegal to use a proxy?</b></span></p>
                 <p data-pid="EMbilfs8" style="margin-top: 1.4em; margin-bottom: 1.4em;"><span style="font-synthesis: style; font-size: 20px;">No, it is not illegal to use a proxy unless you are using it for illegal purposes. However, if you are using it to attain certain personal or business needs there is no problem.</span></p>
@@ -644,6 +652,19 @@
         }
     </script>
     <!--============= menu skip end=============-->
+    
+    <!--============= FAQ =============-->
+    document.addEventListener('DOMContentLoaded', function () {
+      var faqs = document.querySelectorAll('.faq-title');
+    
+      faqs.forEach(function (faq) {
+        faq.addEventListener('click', function () {
+          var faqSection = faq.parentNode;
+          faqSection.classList.toggle('active');
+        });
+      });
+    });
+<!--============= FAQ end=============-->
 
     <div class="dianshi-global" id="" name="">
         <div class="tpm1-anchor-widget--simple is-fixed is-def-hidden is-center" style="top: 0px;">

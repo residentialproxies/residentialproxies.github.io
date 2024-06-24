@@ -143,7 +143,7 @@
                 <div id="2"><span><br></span></div>
                 <h2 id="tablepress-8-name" style="line-height: 40px; margin: 15px -25px; padding: 0px 25px; border-left: 5px solid rgb(0, 162, 255);"><span style="font-size: 18px;"><b>What is Proxy-Cheap?</b></span>
                 </h2>
-
+                
                 <span>Proxy-Cheap is a notable proxy provider, appealing to those seeking affordable proxies. Established in 2018, it has secured a strong market presence by focusing on safety, reliability, and low cost. The service caters mainly to small-scale users, offering some of the cheapest proxies available while maintaining high performance and quality.</span>
                 <span>Proxy-Cheap provides datacenter ipv4 & ipv6, mobile, static residential, and rotating residential proxies. With over 6.9 million residential IPs in its pool and coverage in 127+ locations, users can easily access geo-targeted content. The proxies rotate IP addresses frequently for enhanced anonymity, but there is also an option to maintain the same IP for session management.</span>
                 <span>Ideal for various applications such as purchasing limited edition items, social media management, data scraping, SEO, ad verification, and accessing geo-restricted content, Proxy-Cheap reduces the maintenance burden for users and emphasizes excellent customer service.</span>
@@ -159,7 +159,130 @@
                 <div><br></div>
                 <h2 id="tablepress-8-name" style="line-height: 40px; margin: 15px -25px; padding: 0px 25px; border-left: 5px solid rgb(0, 162, 255);"><span style="font-size: 18px;"><b>3，安装宝塔软件</b></span>
                 </h2>
+                <span id="4">宝塔面板是一款服务器管理软件，是一款集成环境软件，可以帮助小白轻松部署web环境，可以帮助用户建立网站，一键配置服务器环境，使得用户通过web界面就可以轻松的管理安装所用的服务器软件。</span>
 
+
+                <h1 style=" font-synthesis: style; font-size: 20px;margin: 20px 0px;">二、宝塔Linux面板的安装</h1>
+                <p style="margin: 15px 0px;"><code>宝塔官网地址：https://www.bt.cn/new/index.html</code></p>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">1. 访问宝塔官网，点击“立即免费安装”</h2>
+                <p><img src="static/shluqu/picture/1652925364415751.png" alt="11.png"></p>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">2. 点击“安装脚本”</h2>
+                <p><img src="static/shluqu/picture/19095651_6285a3e365be358586.png" alt="image.png"></p>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">3. 我的服务器部署的是Centos系统，所以我这里选择的是Centos安装脚本</h2>
+                <p><img src="static/shluqu/picture/19095704_6285a3f09685767988.png" alt="image.png"></p>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">4. 执行命令进行安装</h2>
+                <p><strong>我连接Linux服务器使用的是XShell</strong> XShell 是一种流行且简单的网络程序，旨在模拟虚拟终端。XShell可以在Windows界面下来访问远端不同系统下的服务器，从而比较好的达到远程控制终端的目的。它支持 RLOGIN、SFTP、SERIAL、TELNET、SSH2 和 SSH1，可以非常方便的对Linux主机进行远程管理。除此之外，其还有丰富的外观配色方案以及样式选择。</p>
+                <div><span><br></span>
+                    <blockquote>
+                        <font face="-apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif" size="3"><span style="font-size: 18px;"><font color="#121212">执行命令：</font><font color="#ce0000">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</font></span></font>
+                    </blockquote>
+                </div>
+                <p><img src="static/shluqu/picture/19095721_6285a401c55f23245.png" alt="image.png"></p>
+                <p>此处询问你“你现在想安装宝塔控制面板吗” 直接输入y按下回车继续安装</p>
+                <p><img src="static/shluqu/picture/19095729_6285a4094c08534794.png" alt="image.png"></p>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">5. 出现下面界面则表示已经安装成功了，并且要记住宝塔内外网面板地址和账号密码，后面登录宝塔面板会用到</h2>
+                <blockquote>
+                    <ul>
+                        <li>外网面板地址: <code>http://124.222.244.61:8888/31dc0a89</code></li>
+                        <li>内网面板地址: <code>http://124.222.244.61:8888/31dc0a89</code></li>
+                        <li>username: <code>dsqgjgyk</code></li>
+                        <li>password: <code>966d859f</code></li>
+                    </ul>
+                </blockquote>
+                <p><img src="static/shluqu/picture/19095738_6285a4121187047889.png" alt="image.png"></p>
+                <h2 id="5" style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">6. 服务器安全组添加8888端口规则</h2>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm ">6.1 找到需要添加端口的云服务器，依次点击“服务器”、“防火墙”、“添加规则”</h3>
+                <p style="margin: 20px 0px;"><strong>我这里以腾讯云为例</strong></p>
+                <p><img src="static/shluqu/picture/19095808_6285a430940f737271.png" alt="image.png"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">6.2. 创建新的规则</h3>
+                <p><img src="static/shluqu/picture/19095814_6285a4369bbee44779.png" alt="image.png"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">6.3. 出现下面这个界面就是添加上了</h3>
+                <p><img src="static/shluqu/picture/19095821_6285a43d494ba25461.png" alt="image.png"></p>
+                <h1 id="6" style=" font-synthesis: style; font-size: 20px; ">三、 宝塔Linux面板的基本使用</h1>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">1. 登录宝塔面板</h2>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">1.1 输入所记录的外网地址，例如： <code>http://124.222.244.61:8888/31dc0a89</code></h3>
+                <p><img src="static/shluqu/picture/19095843_6285a45390c3198738.png" alt="image.png"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">1.2. 输入刚才记录的账号和密码，点击“登录”</h3>
+                <p><img src="static/shluqu/picture/19095850_6285a45a6ee1351312.png" alt="无标题.png"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">1.3. 勾选“我已阅读并同意‘用户协议’”</h3>
+                <p><img src="static/shluqu/picture/19095857_6285a4616de1430430.png" alt="image.png"></p>
+                <h3 id="7" style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">1.4. 绑定宝塔账号</h3>
+                <p style="margin: 20px 0px;">第一次登录需要绑定宝塔账号，要是有宝塔账号的直接登录就可以，没有的话就先去注册一个再进行登录</p>
+                <p><img src="static/shluqu/picture/19095904_6285a468658fd67307.png" alt="image.png"></p>
+                <h2 id="8" style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">2. 安装环境套件</h2>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">2.1. 选择安装套装</h3>
+                <p style="margin: 20px 0px;">首次使用宝塔面板推荐安装一组套件，对于刚接触Linux环境部署的博友们，推荐使用<em>LNMP</em>，采用极速安装、一键安装的方式</p>
+                <p style="margin: 20px 0px;">LNMP和LAMP环境主要的区别在于web服务器上面，LNMP使用的是Nginx服务器，而LAMP使用的是Apache服务器。Nginx 性能稳定、功能丰富、运维简单、处理静态文件速度快且消耗系统资源极少。</p>
+                <p><img src="static/shluqu/picture/19095912_6285a470d4a1485620.png" alt="image.png"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">2.2. 安装环境套件</h3>
+                <p style="margin: 20px 0px;">出现下面界面说明正在安装，根据服务器的配置不同，安装所需要的时间也不一样</p>
+                <p><img src="static/shluqu/picture/19095921_6285a479b5dff3994.png" alt="image.png"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">2.3. 环境套件安装完成</h3>
+                <p style="margin: 20px 0px;">点击消息列表，出现下面界面，说明套件已经安装成功了</p>
+                <p><img src="static/shluqu/picture/19095928_6285a4802cf5f66120.png" alt="image.png"></p>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">3. 宝塔面板初始化界面</h2>
+                <p><img src="static/shluqu/picture/19095936_6285a48860a5a92698.png" alt="image.png"></p>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">4. 宝塔面板首页的模块介绍</h2>
+                <p><img src="static/shluqu/picture/19095943_6285a48f76cee71607.png" alt="image.png"></p>
+                <ol>
+                    <li>系统操作 显示当前服务器系统类型、服务器运行时间、面板版本、面板升级更新入口、并提供宝塔账号绑定、微信小程序绑定、服务器重启、面板重启、修复面板等快捷功能。
+                    </li>
+                    <li>服务器状态 显示当前服务器CPU、内存、硬盘的使用率、内存清理，所有状态均取自服务器真实数据。 内存的清理：点击内存图标中的小火箭图标，即可实现清理功能。
+                    </li>
+                    <li>站点信息 显示当前面板管理的站点、FTP、数据库数量，仅提供数量显示，如需添加站点，请在网站选项中添加站点。
+                    </li>
+                    <li>软件管理 首页软件快速方式，可以实现拖动图片，更换顺序、管理软件等功能。
+                    </li>
+                    <li id="9">网络流量 实时显示当前服务器网络流量的上传和下载速度，总上传流量，总下载流量。 注：当前网络流量数据，直接取自网卡数据，包含内外网流量。
+                    </li>
+                </ol>
+                <h2 style=" font-synthesis: style; font-size: 16px;text-indent: 1.2cm;margin: 20px 0px;">5. 创建网站站点</h2>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">5.1. 点击“添加站点”</h3>
+                <p><img src="static/shluqu/picture/19095953_6285a49926c0048746.png" alt="image.png">
+                    <img src="static/shluqu/picture/19095959_6285a49f61c8216423.png" alt="image.png"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">5.2. 站点创建成功</h3>
+                <p><img src="static/shluqu/picture/19100007_6285a4a79bd4314983.png" alt="image.png">
+                    <img src="static/shluqu/picture/19100013_6285a4ad2b47e15358.png" alt="image.png"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">5.3. 通过浏览器访问</h3>
+                <p><img src="static/shluqu/picture/19100018_6285a4b2f3e1613823.png" alt="image.png"></p>
+
+                <p id="10" style="margin: 20px 0px;">以上就是香港vps部署宝塔教程，中间特别需要注意的就是需要设置好安全组！</p>
+
+                <div id="11"><br></div>
+                <h2 id="tablepress-8-name" style="line-height: 40px; margin: 15px -25px; padding: 0px 25px; border-left: 5px solid rgb(0, 162, 255);"><span style="font-size: 18px;"><b>4，安装wordpress</b></span>
+                </h2>
+                <div><span style="font-size: 18px;"><br></span></div>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">第一步 部署Wordpress</h3>
+                <p id="12" style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">依次点击软件管理-宝塔插件-宝塔一键部署源码-设置，切换到博客，找到Wordpress点击一键部署。<br><img src="static/shluqu/picture/258fc78603ad610018659df342b108df47f8d111.png" alt="image" title="image"></p>
+                <h3 style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">第二步 配置网站信息</h3>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">按需填写好域名、根目录、数据库、密码等信息，填写数据库时也会同时创建一个同名的管理用户。如果日后不打算使用域名访问网站则填写主机的IP地址即可，如果哪天希望使用域名访问网站，可以再次进入网站的域名管理，添加域名即可。</p>
+                <p><img src="static/shluqu/picture/32dc741dddcb513a5eacf6169351856e9fbb51c6.png" alt="image" title="image"></p>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">耐心等待几分钟，Wordpress程序就部署好了。</p>
+                <p><img src="static/shluqu/picture/079641e6758e50987fc31d93c39da1affea38d47.png" alt="image" title="image"></p>
+                <h3 id="13" style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">第三步 安装Wordpress</h3>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">打开浏览器访问Wordpress网站，初次配置会进入安装引导界面。</p>
+                <p><img src="static/shluqu/picture/c67a00ac20d7bdfb749ce52122841bd2b91fb478.png" alt="image" title="image"></p>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">输入之前填写的数据库名、用户名、密码，数据库主机、表前缀可以和下图一样。</p>
+                <p><img src="static/shluqu/picture/c1f57b13cb2b711f0bd58ac61bd230bcf168b8e8.png" alt="image" title="image"></p>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">若输入的相关信息正确，就可以开始连接数据库了。</p>
+                <p><img src="static/shluqu/picture/47c350f9dd9c7af6412a40d0a781ef5006c3f1c5.png" alt="image" title="image"></p>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">数据库连接成功后，接下来填写站点标题、管理员用户名、密码、电子邮箱信息，开始安装Wordpress。</p>
+                <p><img src="static/shluqu/picture/ba5d7e5e2aef870e2e82922f8f39955e99587738.png" alt="image" title="image"></p>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">一切顺利的话，Wordpress就安装成功了！</p>
+                <p><img src="static/shluqu/picture/5599f206db3b8872efe52dececeed2a851493a84.png" alt="image" title="image"></p>
+                <h3 id="14" style=" font-synthesis: style; font-size: 16px;text-indent: 1.3cm;margin: 20px 0px;">第四步 登陆网站控制台</h3>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">输入管理员用户名、密码登陆网站管理控制台。</p>
+                <p><img src="static/shluqu/picture/28a791094536adca84a353f7ffd1d3c06e960fd9.png" alt="image" title="image"></p>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">这里就是网站管理控制台，写文章、装插件、看评论都是在这里进行的，有兴趣的朋友可以简单浏览一下各功能区。</p>
+                <p><img src="static/shluqu/picture/92b97d7f03f8e54c32fef0ce72b69188b5c2bf4c.png" alt="image" title="image"></p>
+                <p style=" font-synthesis: style; font-size: 16px;margin: 20px 0px;">使用主流浏览器访问网站域名或者主机IP地址即可。</p>
+                <p><img src="static/shluqu/picture/b9f23663ddbfcfc56fdf967191e7f86bb64c3213.png" alt="image" title="image"></p>
+                <div><span style="font-size: 18px;"><br></span></div>
+                <div><span style="font-size: 18px;">以上就是在腾讯云</span><span style="font-size: 18px;">香港VPS</span><span style="font-size: 18px;">利用开源程序WordPress搭建外贸网站的几个步骤，中间需要调整的细节非常多，需要根据自己的需求作调整。WordPress用来搭建外贸站的好处就是主题和插件很丰富，后台操作也比较简单，这也是它能成为全球使用量最多的CMS开源程序的原因。</span></div>
+                <div><br></div>
+                <div><br></div>
+            </div>
+        </div>
     </section>
     <!--============= Category Section Ends Here =============-->
 
